@@ -1,3 +1,11 @@
+@extends('layout')
+
+
+@section('content')
+<!-- Bootstrap core CSS -->
+{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 	 --}}
+
+
 <div class="container">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
