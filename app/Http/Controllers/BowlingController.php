@@ -21,7 +21,8 @@ class BowlingController extends Controller
 
 	public function addGame() {
 
-		// $input = Input::all();
+		$input = Input::all();
+		dd($input);
 		// $name = strtolower($input['name']);
 		// $score = $input['score'];
 
