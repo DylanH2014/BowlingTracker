@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class 01CreateBowlingScores extends Migration
+class CreateBowlingScores extends Migration
 {
     /**
      * Run the migrations.
@@ -14,12 +14,13 @@ class 01CreateBowlingScores extends Migration
     public function up()
     {
         
-        Schema::create('bowling_scores', function (Blueprint $table) {
+         Schema::create('bowling_scores', function (Blueprint $table) {
             $table->increments('id');
             $table->string('user');
             $table->string('score');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -29,6 +30,9 @@ class 01CreateBowlingScores extends Migration
      */
     public function down()
     {
+        
         Schema::drop('bowling_scores');
+
     }
 }
+

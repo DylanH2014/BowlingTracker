@@ -10,14 +10,14 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-			<a class="navbar-brand">BowlAway Test</a>
+			<a class="navbar-brand">Bowling Tracker</a>
 			</div>
-{{-- 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/bowling">Home</a></li>
-				<li><a href="/bowling/all/dylan">Dylan</a></li>
-				<li><a href="/bowling/all/justin">Justin</a></li> 
-				<li><a href="/bowling/all/gary">Gary</a></li> 
-			</ul> --}}
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/bowler/dylan">Dylan</a></li>
+				<li><a href="/bowler/justin">Justin</a></li> 
+				<li><a href="/bowler/gary">Gary</a></li> 
+			</ul>
 		</div>
 	</nav>
 

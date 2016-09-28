@@ -10,6 +10,8 @@ use DB;
 
 use Illuminate\Support\Facades\Input;
 
+use App\Bowling;
+
 class BowlingController extends Controller
 {
     
@@ -22,35 +24,35 @@ class BowlingController extends Controller
 	public function addGame() {
 
 		$input = Input::all();
-		dd($input);
-		// $name = strtolower($input['name']);
-		// $score = $input['score'];
+		// dd($input);
+		$name = strtolower($input['name']);
+		$score = $input['score'];
 
-		// $newGame = new Bowling;
-		// $newGame->user = $name;
-		// $newGame->score = $score;
-		// $newGame->save();
+		$newGame = new Bowling;
+		$newGame->user = $name;
+		$newGame->score = $score;
+		$newGame->save();
 
-		// return view('bowling.index');
+		return view('index');
 
 	}
 
 	public function show($id) {
 
-		// $game = Bowling::find($id);
+		$game = Bowling::find($id);
 
-		// return view('bowling.show', compact('game'));
+		return view('show', compact('game'));
 
 	}
 
 
 	public function showAll($user) {
 
-		// // $allGames = Bowling::where('user', $user)->get();
+		$allGames = Bowling::where('user', $user)->get();
 
 		// $allGames = DB::table('bowling')->where('user', $user)->get();
 
-		// return view('bowling.showAll', compact('allGames'));
+		return view('showAll', compact('allGames'));
 
 	}
 

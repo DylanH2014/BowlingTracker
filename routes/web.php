@@ -18,5 +18,5 @@
 
 	Route::get('/', 'BowlingController@index');
 	Route::post('/', 'BowlingController@addGame');
-	Route::get('/{game}', 'BowlingController@show');
-	Route::get('/{name}', 'BowlingController@showAll');
+	Route::get('/game/{game}', 'BowlingController@show');
+	Route::get('/bowler/{name}', 'BowlingController@showAll');
