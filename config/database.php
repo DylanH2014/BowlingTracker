@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' =>  45.55.159.57,
+            'host' =>  '45.55.159.57',
             'port' => env('DB_PORT', '3306'),
-            'database' => urvxhmjefm,
-            'username' => urvxhmjefm,
-            'password' => jb4pUWKx7Q,
+            'database' => 'urvxhmjefm',
+            'username' => 'urvxhmjefm',
+            'password' => 'jb4pUWKx7Q',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
