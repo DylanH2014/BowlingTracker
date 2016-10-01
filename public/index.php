@@ -1,5 +1,8 @@
 <?php
 
+ini_set('error_log','1');
+ini_set('display_errors','1');
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
