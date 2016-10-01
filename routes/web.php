@@ -20,3 +20,6 @@
 	Route::post('/', 'BowlingController@addGame');
 	Route::get('/game/{game}', 'BowlingController@show');
 	Route::get('/bowler/{name}', 'BowlingController@showAll');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
