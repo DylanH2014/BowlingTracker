@@ -27,6 +27,7 @@ class BowlingController extends Controller
 		// dd($input);
 		$name = strtolower($input['name']);
 		$score = $input['score'];
+		// dd(gettype($score));
 
 		$newGame = new Bowling;
 		$newGame->user = $name;

@@ -17,7 +17,7 @@ class CreateBowlingScores extends Migration
          Schema::create('bowling_scores', function (Blueprint $table) {
             $table->increments('id');
             $table->string('user');
-            $table->integer('score');
+            $table->string('score');
             $table->timestamps();
         });
 

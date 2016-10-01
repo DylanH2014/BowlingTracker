@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
 
     /*
     |--------------------------------------------------------------------------
@@ -62,8 +62,8 @@ return [
              'charset' => 'utf8',
              'collation' => 'utf8_unicode_ci',
              'prefix' => '',
-             'strict' => true,
-             'engine' => null,
+             // 'strict' => true,
+             // 'engine' => null,
          ],
 
         'pgsql' => [
